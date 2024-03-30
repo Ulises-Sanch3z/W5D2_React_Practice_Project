@@ -33,13 +33,13 @@ This application was created for the purpose of sharing my favorite learning res
     * Displays a list of websites that offer valuable learning materials for coding and web development.
     * Each website entry includes the name, a brief description, and a link to the website.
 
-# State Management
-    * The application's state is managed in the App component, utilizing React's useState hook. This includes the current page being displayed.
+## State Mangement
+* The application's state is managed in the App component, utilizing React's useState hook. This includes the current page being displayed.
 
-# Lifecycle Methods
+## Lifecycle Methods
 
-    * I used React hooks (useState) in functional components to manage state.
+* I used React hooks (useState) in functional components to manage state.
 
-# Conclusion
-    * It took many hours for me to complete this assignment and even now i still do not fully understand everything i did. I will continue to work with react to familiarize myself with its structure and features. I definitely like react compared to other forms of creating websites as I dont have to work with multiple html files and i can easily implement logic onto the pages using js. 
+## Conclusion
+* It took many hours for me to complete this assignment and even now i still do not fully understand everything i did. I will continue to work with react to familiarize myself with its structure and features. I definitely like react compared to other forms of creating websites as I dont have to work with multiple html files and i can easily implement logic onto the pages using js. 
 
