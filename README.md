@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Favorite Learning Resources
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application was created for the purpose of sharing my favorite learning resources (books and websites). This application features a simple navigation system that allows users to switch between the home page, a books page, and a websites page.
 
-## Available Scripts
+## Component Structure
+* `App`:
+- The root component that manages the main application state and navigation.
 
-In the project directory, you can run:
+* State:
+    * `currentPage`: A string indicating which page is currently displayed.
 
-### `npm start`
+* Methods:
+    * `navigate(page)`: Updates the currentPage state to navigate between different pages.
+    * Renders the `NavBar` component and conditionally renders either the `LandingPage`, `Books`, or `Websites` based on the `currentPage` state.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* NavBar:
+    * Displays the navigation bar with a home button.
+    * Props:
+        * `onNavigate`: Function passed from App to change the current page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* `LandingPage`:
+    * Provides a brief introduction and description of the website.
+    * Provides buttons for navigating to the Books and Websites pages.
 
-### `npm test`
+* Props:
+    * `onNavigate`: Function passed from App for navigating to different pages.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* `Books` Page:
+    * Displays a list of books.
+    * Each book entry includes the title, author, a brief description, and a link for more information.
 
-### `npm run build`
+* `Websites` Page:
+    * Displays a list of websites that offer valuable learning materials for coding and web development.
+    * Each website entry includes the name, a brief description, and a link to the website.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## State Management
+    - The application's state is managed in the App component, utilizing React's useState hook. This includes the current page being displayed.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Lifecycle Methods
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    -I used React hooks (useState) in functional components to manage state.
 
-### `npm run eject`
+## Conclusion
+    - It took many hours for me to complete this assignment and even now i still do not fully understand everything i did. I will continue to work with react to familiarize myself with its structure and features. I definitely like react compared to other forms of creating websites as I dont have to work with multiple html files and i can easily implement logic onto the pages using js. 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
